@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANTHA - Your favriote books are here</title>
+    <link rel="icon" href="LogoImages/iconlogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/9459b328e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="headernav">
+                <div class="logo">
+                    <a href=""><img src="LogoImages/logo.png" alt="Grantha Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="search" class="searchbox" id="searchbox" placeholder="Search...">
+                    <button type="submit" class="searchbtn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="acc-cart">
+                    <ul>
+                        <li><a href=""><label for="searchbox" id="searchIcon"><i class="fa-solid fa-search fa-2x"></i></label></a></li>
+                        <li title="View Cart"><a href=""><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
+                        <li title="Account"><a href=""><i class="fa-solid fa-user fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <nav class="navbar">
+            <ul class="mainlist">
+                <li><a href="" class="current">Home</a></li>
+                <li class="booksDropdown" id="dropdown"><a href="">Books <span class="arrow">&#9662;</span></a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <div class="container-homepage">
+                <aside>
+                    <div class="genre-main">
+                        <div class="genre">
+                            <h3>Genre</h3>
+                        </div>
+                        <div class="genre-list">
+                            <ul>
+                                <li><a href="">Fiction</a></li>
+                                <li><a href="">Non-Fiction</a></li>
+                                <li><a href="">Fantasy</a></li>
+                                <li><a href="">Romance</a></li>
+                                <li><a href="">Science</a></li>
+                                <li><a href="">Politics</a></li>
+                                <li><a href="">Biography</a></li>
+                                <li><a href="">Historical</a></li>
+                                <li><a href="">Horror</a></li>                       
+                                <li><a href="">Nature</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+        
+                <section>
+                    <div class="section-container">
+
+                    
+                        <div class="getstarted">
+                            <h1>Get Started, Top Picks</h1>
+                        </div>
+                        <div class="homePageBooks">
+                            <ul class="homePageBooksList">
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="atomic-habit">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Atomic-Habits.png" alt="Atomic Habit" title="Atomic Habit">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1>Atomic Habits</h1>
+                                                <p>Rs.1,280.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="meditations">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Meditations.png" alt="Meditations" title="Meditations">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1>Meditations</h1>
+                                                <p>Rs.560.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="fourtyeight-laws-of-power">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/48-Laws-of-Power.png" alt="48LawsOfPower" title="48 Laws of Power">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">48 Laws of Power</h1>
+                                                <p>Rs.560.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="ikigai">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Ikigai.png" alt="Ikigai" title="Ikigai">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1>Ikigai</h1>
+                                                <p>Rs.760.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="cleopatraAndFrankenstein">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Cleopatra-and-Frankenstein.png" alt="Cleopatra and Frankenstein" title="Cleopatra and Frankenstein">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">Cleopatra and Frankenstein</h1>
+                                                <p>Rs.1,460.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="elonMusk">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Elon-Musk.png" alt="Elon Musk" title="Elon Musk">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1>Elon Musk</h1>
+                                                <p>Rs.1,260.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="tomorrowAndTomorrow">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Tomorrow-and-Tomorrow.png" alt="Tomorrow & Tomorrow" title="Tomorrow, and Tomorrow, and Tomorrow">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">Tomorrow, and Tomorrow, and Tomorrow</h1>
+                                                <p>Rs.660.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="heaven">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Heaven.png" alt="Heaven" title="Heaven">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1>Heaven</h1>
+                                                <p>Rs.950.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="twelveRulesForLife">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/12-Rules-for-Life.png" alt="12-Rules-for-Life" title="12 Rules for Life">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">12 Rules for Life</h1>
+                                                <p>Rs.1,550.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="crimeAndPunishment">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Crime-and-Punishment.png" alt="Crime and Punishment" title="Crime and Punishment">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">Crime and Punishment</h1>
+                                                <p>Rs.770.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="thePsychologyOfMoney">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/The-Psychology-of-Money.png" alt="The Psychology of Money" title="The Psychology of Money">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 4s;">The Psychology of Money</h1>
+                                                <p>Rs.1,250.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <div class="bookCard" id="metamorphosis">
+                                            <div class="bookImage">
+                                                <img src="BookImages/TopPicks/Metamorphosis.png" alt="Metamorphosis" title="Metamorphosis">
+                                            </div>
+                                            <div class="bookDetails">
+                                                <h1 class="marquee-text" style="--animation-duration: 2s;">Metamorphosis</h1>
+                                                <p>Rs.950.00</p>
+                                            </div>
+                                            <button>Add to Cart</button>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quote">
+                            <h1>"A mind needs books as a sword needs a whetstone,<br>
+                                if it is to keep its edge"</h1>
+                            <p>-George R.R Martin</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <article>
+                    <h5>Info about selected books</h5>
+                </article>
+            </div>
+            
+            
+            
+        </main>
+    
+        <footer>
+            
+        </footer>
+    </div>
+    
+    <script>
+        // JavaScript to dynamically calculate animation duration based on text length
+        const marqueeTextElements = document.querySelectorAll('.marquee-text');
+        marqueeTextElements.forEach((element) => {
+            const text = element.textContent.trim();
+            const textLength = text.length;
+            const animationDuration = textLength * 0.5 + 's'; // Adjust the factor as needed
+            element.style.setProperty('--animation-duration', animationDuration);
+        });
+    </script>
+</body>
+</html>

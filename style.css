@@ -1,0 +1,372 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:  Montserrat, Mulish, Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #EAE7F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0px auto;
+    
+}
+
+
+header {
+    
+    background-color: #fcfcfc;
+    margin-top: -60px;
+    margin-bottom: -20px;
+}
+header .logo {
+    position: relative;
+    z-index: 2;
+    top: 50px;
+    left: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 10px 0px 0px 10px;
+}
+header .logo img{
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+}
+header .logo a img{
+    cursor: pointer;
+}
+header .search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+}
+
+header .searchbox {
+    padding: 4px 2px 4px 12px;
+    height: 40px;
+    width: 28em;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid #7F759A;
+    border-right-color: transparent;
+    color: #7F759A;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    margin-left: .4em;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    cursor: pointer;
+  }
+
+header .searchbox:focus{
+    outline: none;
+}
+header .searchbtn {
+    background-color: #8A6DF7;
+    padding: 1px 5px 1px 1px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid #7F759A;
+    border-left-color: transparent;
+    color: #ffffff;
+    width: 40px;
+    cursor: pointer;
+}
+header .searchbtn:hover{
+    background-color: #7F759A;
+}
+header .acc-cart ul{
+    list-style-type: none;
+    background-color: #ffffff;
+    padding-right: 20px;
+    margin: 0px;
+    overflow: visible;
+    display: flex;
+    justify-content: right;
+}
+#searchIcon{
+    display: none;
+}
+header .acc-cart a{
+    color: #7F759A;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-right: 40px;
+    position: relative;
+    top: -42px;
+    border-bottom: 2px solid transparent;
+    
+}
+header .acc-cart a:hover{
+    color: #8A6DF7;
+    transition: 0.2s;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    height: 40px;
+    box-shadow: 0 2px 2px 0 #ddd1ff;
+}
+
+.mainlist{
+    list-style-type: none;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    color: #7F759A;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+}
+.navbar a.current{
+    color: #8A6DF7;
+}
+.mainlist a:hover{
+    color: #8A6DF7;
+    border-bottom: 2px solid #8A6DF7;
+    transition: 0.3s;
+}
+.arrow {
+    display: inline-block;
+    transform: rotate(0deg); 
+    transition: transform 0.3s; 
+}
+  
+#dropdown:hover .arrow {
+    transform: rotate(180deg); 
+}
+.navbar li{
+    float: left;
+}
+
+.container-homepage{
+    display: flex;
+}
+
+aside{
+    width: 15%;
+    height: 100dvh;
+    float: left;
+    position: sticky;
+    top: 40px;
+    background-color: #fcfcfc;
+    
+}
+.genre-main{
+    padding: 10px;
+    margin: 20px 1px 5px 20px;
+}
+.genre h3 {
+    font-weight: lighter;
+
+}
+.genre-list ul{
+    list-style-type: none;
+    padding: 10px 10px 10px 2px;
+}
+.genre-list li{
+    padding: 10px;
+    margin: 10px;
+}
+.genre-list a{
+    text-decoration: none;
+    color: #7F759A;
+    border-bottom:1px solid #7F759A;
+}
+.genre-list a:hover{
+    color: #8A6DF7;
+    border-bottom: transparent;
+    transition: 0.2s;
+}
+
+section{
+    width: 60%;
+    float: left;
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.getstarted h1{
+    color: #34313c;
+    font-weight: lighter;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    
+}
+.homePageBooksList {
+    list-style-type: none;
+    display: contents;
+}
+
+.homePageBooks{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.homePageBooks a{
+    text-decoration: none;
+    color: #34313c;
+}
+.homePageBooks a:hover{
+    .bookCard{
+        background-color: #f9f9f9;
+    }
+    .bookDetails h1{
+        text-decoration: underline;
+    }
+}
+.homePageBooks a:hover .bookImage img{
+    transform: scale(1.05);
+}
+
+.bookCard{
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    width: 150px;
+    height: 330px;
+    position: relative;
+    top: 40px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 4px #6f6980;
+    float: left;
+}
+.bookImage{
+    overflow: hidden;
+    height: 72%;
+    
+    
+}
+.bookImage img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    transition: all 0.4s;
+}
+.bookDetails{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bookDetails h1{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+/* Define the common style for the h1 element */
+.marquee-text {
+    white-space: nowrap;
+}
+
+/* Define the marquee animation for .marquee-text */
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Apply the marquee animation only to the .marquee-text within .bookCard when hovering over .bookCard */
+.bookCard:hover .marquee-text {
+    animation: marquee 5s linear infinite;
+    animation-play-state: running;
+}
+
+.bookCard p {
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.bookCard button {
+    background-color: #fcfcfc;
+    color: #34313c;
+    font-size: medium;
+    width: 80%;
+    height: 30px;
+    border: 1px solid #34313c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.bookCard button:hover{
+    background-color: #8A6DF7;
+    color: #ffffff;
+    border: transparent;
+    transition: 0.1s;
+}
+
+.quote{
+    position: relative;
+    padding: 30px 10px;
+    width: 80%;
+    margin: 10em auto;
+    text-align: center;
+    color: #4e495a;
+    background-color: #fcfcfc;
+    border: 6px solid #8A6DF7;
+    border-radius: 60px 0px;
+    box-shadow: 4px 5px 10px #4e495a;
+}
+
+.quote h1{
+    text-shadow: 2px 2px 4px #ddd1ff;
+    padding: 4px;
+}
+.quote p{
+    color: #8A6DF7;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+article{
+    width: 25%;
+    float: left;
+    background-color: #fcfcfc;
+    height: 100vh;
+    position: sticky;
+    top: 40px;
+}
