@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANTHA - Your favriote books are here</title>
+    <link rel="icon" href="LogoImages/iconlogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9459b328e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="headernav">
+                <div class="logo">
+                    <a href="index.html"><img src="LogoImages/logo.png" alt="Grantha Bookstore"></a>
+                </div>
+                <div class="search">
+                    <input type="search" class="searchbox" id="searchbox" placeholder="Search...">
+                    <button type="submit" class="searchbtn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="acc-cart">
+                    <ul>
+                        <li><a href=""><label for="searchbox" id="searchIcon"><i
+                                        class="fa-solid fa-search fa-2x"></i></label></a></li>
+                        <li title="View Cart"><a href=""><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
+                        <li title="Account"><a href="" class="current"><i class="fa-solid fa-user fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <nav class="navbar">
+            <ul class="mainlist">
+                <li><a href="index.html">Home</a></li>
+                <li class="booksDropdown" id="dropdown"><a href="">Books <span class="arrow">&#9662;</span></a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="formBtn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                </div>
+                <form id="loginForm">
+                    <label for="lUsername">Username</label>
+                    <input type="text" placeholder="Username" id="username">
+                    <label for="lPassword">Password</label>
+                    <input type="password" placeholder="Password" id="lPassword">
+                    <button type="submit" class="button" id="loginButton">
+                        Login</button><br>
+                    <a href="">Forgot Password</a>
+                </form>
+                <form id="registerForm">
+                    <label for="rUsername">Username</label>
+                    <input type="text" placeholder="Username" id="rUsername">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" id="email">
+                    <label for="rPassword">Password</label>
+                    <input type="password" placeholder="Password" id="rPassword">
+                    <button type="submit" class="button" id="registerButton">
+                        Register</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        var loginForm=document.getElementById("loginForm");
+        var registerForm = document.getElementById("registerForm");
+        
+        function register(){
+            registerForm.style.transform="translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+        }
+
+        function login() {
+                registerForm.style.transform = "translateX(500px)";
+                loginForm.style.transform = "translateX(500px)";
+            }
+    </script>
+
+</body>
+</html>

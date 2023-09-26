@@ -1,0 +1,84 @@
+.container{
+    height: 500px;
+    width: 400px;
+    background-color: #fcfcfc;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    padding: 20px 0px;
+    box-shadow: 1px 1px 6px #7F759A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .formBtn span{
+    font-weight: bold;
+    padding: 0px 20px;
+    color: #7F759A;
+    margin: auto;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.container form label{
+    display: inline-block;
+    text-align: left;
+    font-weight: normal;
+    color:#7F759A
+}
+.formBtn{
+    display: flex;
+    text-align: center;
+    
+}
+.container form{
+    max-width: 400px;
+    padding: 0px 30px;
+    position: absolute;
+    top: 130px;
+    transition: transform 0.7s;
+}
+form input{
+    width: 94%;
+    height: 40px;
+    margin: 20px 0px;
+    padding: 0px 0px 0px 16px;
+    border-radius: 16px;
+    border: 1px solid #7F759A;
+    color: #7F759A;
+}
+#loginForm{
+    width: 85%;
+}
+form input:focus{
+    outline: 1px solid #8A6DF7;
+}
+form .button{
+    width: 100%;
+    height: 44px;
+    background-color: #fcfcfc;
+    border: 1px solid #8A6DF7;
+    color: #8A6DF7;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+form .button:hover {
+    background-color: #8A6DF7;
+    border: 1px solid #8A6DF7;
+    color: #fcfcfc;
+    
+}
+#loginForm{
+    left: -500px;
+}
+#registerForm{
+    left: 0px;
+}
+form a{
+    font-size: 14px;
+    color: #8A6DF7;
+}
+form a:hover{
+    text-decoration: none;
+}

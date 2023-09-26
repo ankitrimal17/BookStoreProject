@@ -17,10 +17,10 @@ body {
     
 }
 
+
 #wrapper {
     width: 100%;
-    margin: 0px auto;
-    
+    margin: 0px auto; 
 }
 
 
@@ -141,7 +141,7 @@ header .acc-cart a:hover{
     padding: 10px 16px;
     border-bottom: 2px solid transparent;
 }
-.navbar a.current{
+.navbar a.current,header .acc-cart a.current{
     color: #8A6DF7;
 }
 .mainlist a:hover{
@@ -162,7 +162,7 @@ header .acc-cart a:hover{
     float: left;
 }
 
-.container-homepage{
+.container-homepage {
     display: flex;
 }
 
