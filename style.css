@@ -359,8 +359,25 @@ section{
     color: #8A6DF7;
     margin-top: 10px;
 }
-
-
+#goToTopBtn{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-content: center;
+    color: #fcfcfc;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #8A6DF7;
+    bottom: 30px;
+    right: 20px;
+    box-shadow: 1px 2px 4px #4e495ab7;
+    cursor: pointer;
+    z-index: 99;
+}
+#goToTopBtn:hover{
+    background-color: #7F759A;
+}
 
 
 

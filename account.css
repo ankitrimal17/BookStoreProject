@@ -10,21 +10,37 @@
     border-radius: 20px;
     overflow: hidden;
 }
+.container .formBtn{
+    padding: 0px 0px 0px 8px;
+}
 
 .container .formBtn span{
     font-weight: bold;
-    padding: 0px 20px;
     color: #7F759A;
-    margin: auto;
+    margin-right: 20px;
     cursor: pointer;
-    width: 100px;
+    width: 180px;
     display: inline-block;
+}
+.container .formBtn #indicator{
+    height: 4px;
+    width: 140px;
+    background-color: #8A6DF7;
+    position: absolute;
+    top: 56px;
+    right: 34px;
+    border-radius: 16px;
+    transition: transform 0.7s;
+
 }
 .container form label{
     display: inline-block;
     text-align: left;
     font-weight: normal;
-    color:#7F759A
+    color:#7F759A;
+    position: absolute;
+    left: 40px;
+    cursor: pointer;
 }
 .formBtn{
     display: flex;
@@ -38,20 +54,39 @@
     top: 130px;
     transition: transform 0.7s;
 }
+
 form input{
     width: 94%;
     height: 40px;
     margin: 20px 0px;
-    padding: 0px 0px 0px 16px;
+    padding: 0px 10px 0px 16px;
     border-radius: 16px;
     border: 1px solid #7F759A;
     color: #7F759A;
 }
+form .rememberMe input{
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 6px;
+}
+form .rememberMe label{
+    display: inline-block;
+    position: relative;
+    left: 6px;
+    top: -2.5px;
+    font-size: 15px;
+}
+
 #loginForm{
     width: 85%;
 }
-form input:focus{
+form input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
     outline: 1px solid #8A6DF7;
+}
+input[type=checkbox]:checked{
+    accent-color: #8A6DF7;
 }
 form .button{
     width: 100%;
@@ -59,6 +94,7 @@ form .button{
     background-color: #fcfcfc;
     border: 1px solid #8A6DF7;
     color: #8A6DF7;
+    font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
     margin: 20px 0px;
