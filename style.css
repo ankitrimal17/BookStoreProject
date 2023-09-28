@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow-x: hidden;
 }
 
 
@@ -22,7 +22,6 @@ body {
     width: 100%;
     margin: 0px auto; 
 }
-
 
 header {
     
@@ -117,7 +116,7 @@ header .acc-cart a:hover{
 .navbar{
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     background-color: #ffffff;
     height: 40px;
     box-shadow: 0 2px 2px 0 #ddd1ff;
@@ -162,6 +161,70 @@ header .acc-cart a:hover{
     float: left;
 }
 
+#exploreSection{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: #34313c;
+    width: 100%;
+    margin-bottom: 16px;
+    height: 700px;
+    box-shadow: 0px 4px 10px #4e495ac2;
+}
+.browseBooks{
+    position: relative;
+    /* background-color: #c82a2a; */
+    width: 50%;
+    height: auto;
+}
+.browseBooksElements{
+    width: 450px;
+    position: absolute;
+    text-align: left;
+    top: 200px;
+    left: 200px;
+}
+.browseBooks h1{
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 20px 0px;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 4px #4e495a90;
+}
+.browseBooks p{
+    color: #d5d5d5;
+}
+.readingImage .readingSvgImage{
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+.readingImage .readingSvgImage img{
+    width: 450px;
+    height: 450px;
+}
+.browseBooks button{
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #8A6DF7;
+    color: #fcfcfc;
+    font-size: 16px;
+    box-shadow: 0px 0px 8px #4e495a90;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+.browseBooks button:hover{
+    background-color: #fcfcfc;
+    color: #4e495a;
+    transform: translateX(5px);
+}
+.readingImage{
+    width: 50%;
+    height: auto;
+}
+
 .container-homepage {
     display: flex;
 }
@@ -174,7 +237,7 @@ aside{
     top: 42px;
     border-radius: 0px 10px 10px 0px;
     background-color: #fcfcfc;
-    
+    margin-top: 100px;
 }
 .genre-main{
     padding: 10px;
@@ -221,14 +284,16 @@ section{
 .getstarted h1{
     color: #34313c;
     font-weight: lighter;
-    display: inline-block;
+    font-size: 30px;
+    text-shadow: 1px 1px 4px #9c96ae;
+    text-align: center;
     position: relative;
     top: 20px;
     left: 40px;
     overflow: hidden;
     white-space: nowrap;
     letter-spacing: .05em;
-    
+    margin-bottom: 50px;
 }
 .homePageBooksList {
     list-style-type: none;
@@ -390,4 +455,5 @@ article{
     position: sticky;
     top: 42px;
     border-radius: 10px 0px 0px 10px;
+    margin-top: 100px;
 }
