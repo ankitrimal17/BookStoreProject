@@ -138,15 +138,29 @@ header .acc-cart a:hover{
     display: block;
     text-align: center;
     padding: 10px 16px;
-    border-bottom: 2px solid transparent;
 }
-.navbar a.current,header .acc-cart a.current{
+.navbar a.current{
     color: #8A6DF7;
 }
-.mainlist a:hover{
+header .acc-cart a.current{
     color: #8A6DF7;
-    border-bottom: 2px solid #8A6DF7;
+    animation: blink 1.5s linear infinite;
+}
+@keyframes blink{
+    50%{
+        color: #2a009e;
+    }
+}
+.mainlist li{
+    border-bottom: 3px solid transparent;
+}
+.mainlist li:hover{
+    border-bottom: 3px solid #8A6DF7;
     transition: 0.3s;
+}
+.mainlist li a:hover{
+        color: #8A6DF7;
+    
 }
 .arrow {
     display: inline-block;
