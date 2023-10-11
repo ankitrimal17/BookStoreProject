@@ -14,32 +14,50 @@
 <body>
     <div id="wrapper">
         <header>
-            <nav class="headernav">
-                <div class="logo">
-                    <a href="index.html"><img src="LogoImages/logo.png" alt="Grantha Bookstore"></a>
-                </div>
-                <div class="search">
-                    <input type="search" class="searchbox" id="searchbox" placeholder="Search...">
-                    <button type="submit" class="searchbtn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                <div class="acc-cart">
-                    <ul>
-                        <li><a href=""><label for="searchbox" id="searchIcon"><i class="fa-solid fa-search fa-2x"></i></label></a></li>
-                        <li title="View Cart"><a href=""><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
-                        <li title="Account"><a href="account.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="wrapper-navbar">
+                <nav>
+                    <input type="checkbox" id="show-search">
+                    <input type="checkbox" id="show-burger">
+                    <div class="content">
+                        <div class="logo"><a href="index.html"><img src="LogoImages/logo.png" alt="Logo"></a></div>
+                        <div class="small-logo"><a href=""><img src="LogoImages/iconlogo.png" alt="Logo"></a></div>
+                        <div class="elements">
+                            <ul class="links">
+                                <li><a href="">Home</a></li>
+                                <li id="dropdown"><a href="">Books<span class="arrow">&#9662;</span></a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-icons">
+                        <div class="burgerIcon"><label for="show-burger" id="burger-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </div>
+                        <div class="searchIcon"><label for="show-search" id="magnifyingGlass">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                        </div>
+                        <div class="cartIcon"><label for="cart">
+                                <a href=""><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a>
+                            </label>
+                        </div>
+                        <div class="accountIcon">
+                            <a href="account.html"><i class="fa-solid fa-user"></i> <span>Account</span></a>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <div class="search-form">
+                            <form action="">
+                                <input type="search" id="searchBox" placeholder="Search...">
+                                <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <nav class="navbar">
-            <ul class="mainlist">
-                <li><a href="" class="current">Home</a></li>
-                <li class="booksDropdown" id="dropdown"><a href="">Books <span class="arrow">&#9662;</span></a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-          
         <main>
             <div id="exploreSection">
                 <div class="browseBooks">

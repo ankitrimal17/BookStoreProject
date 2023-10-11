@@ -1,9 +1,14 @@
+.search-box form .searchBtn{
+    margin-top: 20px;
+}
+
+
 .container{
     height: 500px;
     width: 400px;
     background-color: #fcfcfc;
     position: relative;
-    top: 40px;
+    top: 130px;
     margin: auto;
     padding: 20px 0px;
     box-shadow: 1px 1px 6px #7F759A;
