@@ -610,6 +610,9 @@ article{
 @media screen and (max-width: 558px) {
 
     /* navbar responsive css starts */
+    .wrapper-navbar nav {
+        max-width: 80%;
+    }
     .wrapper-navbar .content .logo {
         display: none;
     }
