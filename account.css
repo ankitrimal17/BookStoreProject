@@ -119,6 +119,7 @@ form .button:hover {
 form a{
     font-size: 14px;
     color: #8A6DF7;
+    text-decoration: underline;
 }
 form a:hover{
     text-decoration: none;

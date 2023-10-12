@@ -104,7 +104,7 @@ nav .content .links {
     background-color: #8A6DF7;
     padding: 7px 0px;
     border-radius: 16px;
-    box-shadow: 2px 4px 1px #3c2f69bc;
+    box-shadow: 2px 4px 2px #3c2f69bc;
 }
 
 .nav-icons .accountIcon a {
@@ -112,7 +112,7 @@ nav .content .links {
 }
 
 .nav-icons .accountIcon:hover {
-    box-shadow: 2px 3px 0px #3c2f69bc;
+    box-shadow: 2px 3px 1px #3c2f69bc;
     transform: translateY(1px);
 }
 
@@ -178,9 +178,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 16px 0px 0px 16px;
 }
 
-.search-box form #searchBox:focus {
-    outline: #8A6DF7;
-}
+
 
 .search-box form .searchBtn {
     height: 40px;
@@ -464,7 +462,10 @@ section{
     text-shadow: 2px 2px 4px #ddd1ff;
     padding: 4px;
 }
-.quote p{
+.quote p {
+    margin-top: 10px;
+}
+.quote p a{
     color: #8A6DF7;
     margin-top: 10px;
 }
@@ -643,7 +644,7 @@ article{
     }
 
     nav .content .links {
-        width: calc(90% - 2px);
+        width: calc(90% - 50px);
     }
 
     /* navbar responsive css ends */
